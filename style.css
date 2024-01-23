@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    background: #71818e;
+}
+
+#pre_load {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+}
+
+.txt {
+    display: flex;
+    gap: .5rem;
+}
+
+.txt h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.txt .left h2 {
+    font-weight: 900;
+}
+
+.center {
+    width: .12rem;
+    height: 1.9rem;
+    background: #000;
+    animation: load 1s linear;
+}
+
+@keyframes load {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 1.9rem;
+    }
+}
+
+#navbar {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    position: absolute;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.logo .left h2 {
+    font-weight: 900;
+}
+
+.logo .line {
+    width: .12rem;
+    height: 1.9rem;
+    background: #fff;
+}
+
+.btn button{
+    width: 7rem;
+    height: 2.5rem;
+    color: #fff;
+    border: 1.5px solid #fff;
+    border-radius: .2rem;
+    background: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn button:hover{
+    background: #fff;
+    color: #000;
+}
+
+.hambuger i{
+    font-size: 2rem;
+}
+
+#close{
+    display: none;
+}
+
+#hero{
+    width: 100%;
+    height:  100vh;
+    background-image: url(https://assets-global.website-files.com/654a0ac89fa4aa44fe8a3f95/6554d831b606819d4b4b8c6a_nova-speaker-xyz-front-p-1080.webp);
+    background-position: 55rem 10rem;
+    background-repeat: no-repeat;
+    background-size: 50rem;
+    background-attachment: fixed;
+}
+
+#hero .wrapper{
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.heading .title p{
+    font-size: 5.5rem;
+    line-height: 6rem;
+}
+
+.heading .btn button{
+    width: 8rem;
+    height: 3.5rem;
+    background: #fff;
+    color: #000;
+}
+
+.wrapper .log h2{
+    font-size: 25rem;
+    margin-top: 1.1rem;
+}
